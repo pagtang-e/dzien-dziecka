@@ -3,9 +3,10 @@ body{
     margin: 0;
     font-family: 'Ysabeau', sans-serif;
     background: #F2DFBBaa;
-    margin-top: 90px;
-  
-    
+    margin-top: 120px;
+    scroll-behavior: smooth;
+    text-align: center;
+    box-sizing: border-box;
 }
 h1{
     font-family: 'Rubik Puddles', cursive;
@@ -15,14 +16,15 @@ h1{
 nav{
     display: flex;
     justify-content: space-between;
-    background-color: #F2306499;
+    background-color: #ee90a9;
     align-items: center;
     position: fixed;
     width: 100%;
     top: 0;
     border-bottom: 2px #333 solid;
+    z-index: 1;
 }
-ul{
+header ul{
     display: flex;
     justify-content: space-around;
     width: 30%;
@@ -72,7 +74,7 @@ h2{
     margin: 0;
     margin-top: 0.5em;
 }
-article{
+main article{
     width: 350px;
     height: 300px;
     border: 2px #333 solid;
@@ -84,12 +86,9 @@ article{
   transition: all 300ms;
   margin-top: 1em;
 
+
 }
-img{
-    object-fit: cover;
-    height: 200px;
-    width: 350px;
-}
+
 h3{
     text-align: center;
     font-size: 2em;
@@ -100,7 +99,7 @@ p{
     font-size: 1.2em;
     margin-block: 0.5em;
 }
-article:hover{
+main article:hover{
     margin-right: 10px;
    
     transform: scale(1.02);
@@ -108,16 +107,97 @@ article:hover{
     
    
 }
-article>h3{
+main article>h3{
     margin:0;
     padding-bottom: 10px;
     width: 100%;
     border-bottom: 2px #333 solid;
 }
 div{
-    width: 90%;
+    width: 100%;
    display: flex;
    flex-wrap: wrap;
-  
-   justify-content: space-between;
+  gap: 20px 100px;
+   justify-content: center;
+   
 }
+input,label{
+
+    font-size: 1.5rem;
+margin-block: 20px;
+
+
+}
+input{
+    background-color: #ffffff66;
+    border: 2px #000 solid;
+    border-radius: 16px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 0.5rem;
+}
+input:hover{
+background-color: #ddd;
+}
+
+fieldset{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 16px;
+    border: 2px #000 solid;
+}
+legend{
+    font-size: 1.5rem;
+}
+footer{
+    
+    background-color: #ee90a9;
+    text-align: left;
+    display: grid;
+    grid-template-areas: 
+    'aside kontakt p';
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+   
+  
+}
+footer>aside{
+    grid-area: aside;
+    padding: 2rem;
+    background-color: #F2DFBBaa;
+    border-radius: 20px;
+    border: 2px #333 solid;
+}
+footer>article{
+    grid-area: kontakt;
+    background-color: #F2DFBBaa;
+    border-radius: 20px;
+    padding: 2rem;
+    border: 2px #333 solid;
+   
+
+}
+footer>div{
+    border-radius: 20px;
+    grid-area: p;
+    background-color: #F2DFBBaa;
+    padding: 2rem;
+    border: 2px #333 solid;
+  
+   
+}
+footer p{
+    text-align: center;
+}
+footer ul{
+   padding-left: 1rem;
+}
+input[type="color"]{
+   width: 70px;
+   height: 40px;
+   padding: 0.2rem;
+}
+

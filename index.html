@@ -20,8 +20,8 @@
         <ul>
           <li><a href="#pozytywy">pozytywy</a></li>
           <li><a href="#negatywy">negatywy</a></li>
-          <li><a href="">formularz</a></li>
-          <li><a href="">kontakt</a></li>
+          <li><a href="#formularz">formularz</a></li>
+          <li><a href="#kontakt">kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -47,8 +47,8 @@
           <p>Młodzi ludzie są mniej obojętni na krzywdę innych i mają większą świadomość o otaczającym nas świecie przez co łatwiej jest im rozwiązywać problemy </p>
         </article>
         <article>
-          <h3></h3>
-          <p></p>
+          <h3>postęp technologiczny</h3>
+          <p>dzięki postępowi technologicznemu wiele wcześniej wymagających czynności stało się niesamowicie proste dzięki technologii nauczyliśmy się również ratować życia </p>
         </article>
       </div>
       </section>
@@ -58,19 +58,65 @@
           niestety na naszym świecie są też rzeczy które mnie martwią i których
           nie lubię jak na przykład
         </p>
+        <div aria-label="group of articles">
         <article>
           <h3>Chciwość</h3>
         
           <p>ludzie są chciwi i nie znają umiaru zawsze stawiają swoje interesy przed innych nawet jeśli będzie to miało katastroficzne skutki długo terminowe. niestety na to jak na razie nie ma łatwego rozwiązania</p></article>
         
       </section>
-      <section>
-        <h2>formularz który pomoże z wyboem porezentu dla ciebie</h2>
+    </div>
+      <section id="formularz">
+        <h2>formularz który pomoże z wyborem prezentu dla ciebie</h2>
         <form action="">
+
+           <label for="wiek">Ile masz lat:</label>
+           <input type="number" id="wiek" name="wiek" min="1" max="100">
+
+           <br>
+
           <label for="kolor">twój ulubiony kolor: </label>
           <input type="color" name="kolor" id="klor" />
+
+          <br>
+
+          
+           <fieldset>
+            <legend>jaka jest twoja płeć:</legend>
+           <label for="chlopak">chłopak: </label>
+           <input type="radio" name="plec" id="chlopak">
+           <label for="dziewczyna">dziewczyna: </label>
+           <input type="radio" name="plec" id="dziewczyna">
+          </fieldset>
+           <br>
+
+           <label for="zabawka">twoja ulubiona zabawka/przedmiot: </label>
+           <input type="text" name="zabawka" id="zabawka">
+          <br>
+           <input type="submit" value="wyślij">
+           <input type="reset" value="wyczyść">
         </form>
+
       </section>
     </main>
+    <footer id="kontakt">
+      <aside>
+        <ul>
+          <li><a href="#pozytywy">pozytywy</a></li>
+          <li><a href="#negatywy">negatywy</a></li>
+          <li><a href="#formularz">formularz</a></li>
+          <li><a href="#kontakt">kontakt</a></li>
+        </ul>
+      </aside>
+      <article>
+        <h2>Kontakt</h2>
+        <p>tel: 123456789</p>
+      
+        <p> sdkjfksdal.dksjf@gmail.com</p>
+      </article>
+      <div>
+      <p>Zofia Mamrowicz &copy; 2023r.</p>
+    </div>
+    </footer>
   </body>
 </html>
