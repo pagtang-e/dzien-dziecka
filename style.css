@@ -3,7 +3,7 @@ body{
     margin: 0;
     font-family: 'Ysabeau', sans-serif;
     background: #F2DFBBaa;
-    margin-top: 120px;
+    
     scroll-behavior: smooth;
     text-align: center;
     box-sizing: border-box;
@@ -27,10 +27,13 @@ nav{
 header ul{
     display: flex;
     justify-content: space-around;
-    width: 30%;
+    
     list-style-type: none;
    
     
+}
+header li{
+    margin: 1rem
 }
 a{
     color: #000;
@@ -74,12 +77,17 @@ h2{
     margin: 0;
     margin-top: 0.5em;
 }
+main header h2{
+    margin-top: 120px;
+}
 main article{
     width: 350px;
     height: 300px;
     border: 2px #333 solid;
    border-radius: 20px;
-   box-shadow: 10px 6px 0px 2px #D9043D88;
+   box-shadow:10px 6px 0px 0px #fb7d9f,  10px 6px 0px 2px #333;
+   
+   
    display: flex;
    flex-direction: column;
    justify-content: space-evenly;
@@ -103,7 +111,7 @@ main article:hover{
     margin-right: 10px;
    
     transform: scale(1.02);
-    box-shadow: 20px 12px 0px 2px #D9043D;
+    box-shadow: 20px 12px 0px 0px #D9043D, 20px 12px 0px 2px #333;
     
    
 }
@@ -113,7 +121,7 @@ main article>h3{
     width: 100%;
     border-bottom: 2px #333 solid;
 }
-div{
+main div{
     width: 100%;
    display: flex;
    flex-wrap: wrap;
@@ -201,3 +209,21 @@ input[type="color"]{
    padding: 0.2rem;
 }
 
+@media(max-width: 1100px) {
+  footer{
+      grid-template-areas: 
+      'aside'
+      ' kontakt'
+      ' p';
+     justify-items: center;
+      gap: 2rem;
+     
+  }
+ 
+    
+}
+@media(max-width: 780px){
+    footer>*{
+        width: 80vw;
+    }
+}
